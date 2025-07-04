@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulação MRU - Ida e Volta</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Trabalho Multidisciplinar Física e DW1 - M32 - 2025</h3>
+  <h4> Maria Elisa, Maria Julia, Oksane, Thaís e Evelin</h4>
+  <h1>Simulação de MRU (Ida e Volta)</h1>
+
+  <p>Digite os tempos (em segundos) para cada posição de 2 metros:</p>
+
+  <div class="section-title">Ida</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Posição (m)</th>
+        <th>Tempo (s)</th>
+        <th>vm = ΔS / Δt (m/s)</th>
+      </tr>
+    </thead>
+    <tbody id="tempoIda"></tbody>
+  </table>
+
+  <div class="section-title">Volta</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Posição (m)</th>
+        <th>Tempo (s)</th>
+        <th>vm = ΔS / Δt (m/s)</th>
+      </tr>
+    </thead>
+    <tbody id="tempoVolta"></tbody>
+  </table>
+
+  <div class="botao-centralizado">
+  <button onclick="calcular()">Calcular e Gerar Gráficos</button>
+  </div>
+
+  <canvas id="graficoPosicao" width="600" height="300"></canvas>
+  <canvas id="graficoVelocidade" width="600" height="300"></canvas>
+  <canvas id="graficoAceleracao" width="600" height="300"></canvas>
+<script src="mru.js"></script>
+</body>
+</html>
